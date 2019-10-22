@@ -131,10 +131,20 @@ https://templatemo.com/tm-516-known
                                              <img src="images/estadoarte.jpg" class="img-responsive" alt="">
                                         </div>
                                    </div>
+                                   
+                                   <div id="overlay2" onclick="off2()">
+                                        <div id="text" style="position:absolute; top:50%; left:50%">
+                                             <img src="images/Sebas1.jpg" class="img-responsive" alt="">
+                                        </div>
+                                   </div>
 
                                    <div style="padding:20px">
                                          <h2>Overlay with Text</h2>
                                          <button onclick="on()">Turn on overlay effect</button>
+                                        <button onclick="on2()" style="height:50px; width:70px">2</button>
+                                        <button onclick="on()">3</button>
+                                        <button onclick="on()">4</button>
+                                        <button onclick="on()">5</button>
                                    </div>
 
                               </div>
@@ -192,6 +202,14 @@ https://templatemo.com/tm-516-known
 
 function off() {
   document.getElementById("overlay").style.display = "none";
+}
+          
+          function on2() {
+  document.getElementById("overlay2").style.display = "block";
+}
+
+function off2() {
+  document.getElementById("overlay2").style.display = "none";
 }
      </script>
 
