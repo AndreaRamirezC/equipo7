@@ -1,4 +1,6 @@
+<html>
 <title>Equipo 7</title>
+<head>
 <!-- 
 Known Template 
 https://templatemo.com/tm-516-known
@@ -156,14 +158,21 @@ https://templatemo.com/tm-516-known
                                              <img src="images/RESUMEN PROBLEMATICA (4).jpg" class="img-responsive" alt="">
                                         </div>
                                    </div>
+                                  <div id="overlay6" class="overlay5" onclick="off6()" style="display:none; background-color: rgba(0,0,0,0.5); ">
+                                        <div id="text" style="position:absolute; top:50%; left:50%">
+                                             <img src="images/ANTROANALYTICS.jpg" class="img-responsive" alt="">
+                                        </div>
+                                   </div>
 
                                    <div style="padding:20px">
                                          <h2>Dividimos la problemática en 5 componentes:</h2>
-                                         <button onclick="on()">IDENTIFICACIÓN DE LA PROBLEMÁTICA</button>
-                                        <button onclick="on2()" style="height:100px; width:200px">FACTORES QUE OCASIONAN LA PROBLEMÁTICA</button>
-                                        <button onclick="on3()" style="height:100px; width:200px">IMPACTOS</button>
-                                        <button onclick="on4()" style="height:100px; width:200px">MEDICIÓN DE LOS EFECTOS</button>
-                                        <button onclick="on5()" style="height:100px; width:200px">COMPARACIÓN CON ESTÁNDARES</button>
+                                         <button onclick="on()" style="height:100px; width:33%;padding-top:10px">IDENTIFICACIÓN DE LA PROBLEMÁTICA</button>
+                                        <button onclick="on2()" style="height:100px; width:33%;top: -14px;position: relative">FACTORES QUE OCASIONAN LA PROBLEMÁTICA</button>
+                                        <button onclick="on3()" style="height:100px; width:33%;top: -5px;position: relative">IMPACTOS</button>
+
+                                        <button onclick="on4()" style="height:100px; width:33%;margin-top:10px">MEDICIÓN DE LOS EFECTOS</button>
+                                        <button onclick="on5()" style="height:100px; width:33%; margin-top:10px">COMPARACIÓN CON ESTÁNDARES</button>
+                                       <button onclick="on6()" style="height:100px; width:33%;margin-top:10px">EFECTOS Y CAUSAS</button>
                                    </div>
 
                               </div>
@@ -250,6 +259,12 @@ function off4() {
 }
 function off5() {
   document.getElementById("overlay5").style.display = "none";
+}
+         function on6() {
+  document.getElementById("overlay6").style.display = "block";
+}
+function off6() {
+  document.getElementById("overlay6").style.display = "none";
 }
      </script>
 
